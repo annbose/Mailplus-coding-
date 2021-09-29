@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+  background: #fece0c;
+}
+
+.wrapper{
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.wrapper .input_field label
+{
+    font-size: 14px;
+    color: dimgray
+}
+
+.wrapper .input_field input[type="text"]
+{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.result{
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    max-width: 1000px;
+
+    background: #fff;
+    padding: 15px;
+  border-radius: 5px;
+  border:dimgray 1 px solid;
+
+  box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+}
+.result .caption{
+    font-weight: 500;
+    padding: 5px;
+}
+.result th,td{
+    padding:5px;
+    margin-bottom:5px;
+    border-bottom: 1px solid rgb(68, 51, 51);
+}
+.result th{
+    border-top: 1px solid dimgray;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+.noError{
+    display:none;
+}
+.resultOnLoad{
+    display:none;
+}
+

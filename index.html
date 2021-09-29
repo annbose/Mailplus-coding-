@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mail plus user form</title>
+  <link rel="stylesheet" href="style.css">
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCh8pFLQGMKV5Ak6f3bOp0KzusFQpu2qI&libraries=places&callback=initMap"
+    async defer>
+    </script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <h2>New user form</h2>
+    <div id="error_message" ></div>
+
+    <form action="" id="myform" onsubmit="return validate();">
+      <div class="input_field">
+        <label>Name:</label>
+        <input type="text" placeholder="Company name" id="name" required>
+      </div>
+      <div class="input_field">
+        <label>Email ID:</label>
+        <input type="text" placeholder="Email" id="email" required>
+      </div>
+      <div class="input_field">
+        <label>Phone number:</label>
+        <input type="text" placeholder="Phone number" id="phone" required>
+      </div>
+      <div class="input_field">
+        <label>Sreet address:</label>
+        <input type="text" placeholder="Address line 1" id="address1" required>
+      </div>
+      <div class="input_field">
+        <label>Landmarks (if any):</label>
+        <input type="text" placeholder="Address line 2" id="address2">
+      </div>
+      <div class="input_field">
+        <label>City:</label>
+        <input type="text" placeholder="City" id="city" readonly>
+      </div>
+      <div class="input_field">
+        <label>State:</label>
+        <input type="text" placeholder="State" id="state" readonly>
+      </div>
+      <div class="input_field">
+        <label>Post code:</label>
+        <input type="text" placeholder="Post code" id="postcode" readonly>
+      </div>
+      <div class="input_field">
+        <label>Latitude:</label>
+        <input type="text" placeholder="Latitude" id="lat" readonly>
+      </div>
+      <div class="input_field">
+        <label>Longitude:</label>
+        <input type="text" placeholder="Longitude" id="lng" readonly>
+      </div>
+      <div class="btn">
+        <input type="submit">
+      </div>
+    </form>
+  </div>
+
+  <div id= "result-div" class="resultOnLoad">
+    <table id='result-table'>            
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
